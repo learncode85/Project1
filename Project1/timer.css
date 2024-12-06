@@ -1,0 +1,21 @@
+body{
+    height:100%;
+    margin:0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+.timer-container{
+    text-align: center;
+    padding-top: 20px;
+}
+button{
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #f6fff1;
+    border: 1px solid #0f0f0f;
+}

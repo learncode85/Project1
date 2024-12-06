@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+      }
+      .p5 {
+        padding: 5px;
+      }
+      /* .m5{margin:5px;} */
+      .w100 {
+        width: 100px;
+      }
+      .w400 {
+        width: 400px;
+      }
+      .w600 {
+        width: 600px;
+      }
+      .w300 {
+        width: 300px;
+      }
+      .h30 {
+        height: 30px;
+      }
+      .h100 {
+        height: 100px;
+      }
+      .h180 {
+        height: 180px;
+      }
+      .h300 {
+        height: 300px;
+      }
+      .bgc-aqua {
+        background-color: aquamarine;
+      }
+      .bgc-lightgrey {
+        background-color: lightgrey;
+      }
+      .item1 {
+        order: 1;
+        flex-grow: 1;
+      }
+      .item2 {
+        order: 2;
+        flex-grow: 3;
+        align-self: flex-end;
+      }
+      .item3 {
+        order: 3;
+        flex-grow: 1;
+      }
+      .b1 {
+        border: 1px solid black;
+        width: 43px;
+        padding: 3px;
+        text-align: center;
+        background-color: yellow;
+        border-radius: 3px;
+      }
+    </style>
+    <script>  
+        function changeContent() {
+            let button1 = document.getElementById('button1')
+            if (button1.innerHTML == 'School') button1.innerHTML = 'home'
+            else button1.innerHTML = 'School'
+        }
+        window.onload = function () {
+          alert('button1=' + document.getElementById('button1'))
+          document
+            .getElementById('button1')
+            .addEventListener('click', changeContent)
+        }
+    </script>
+  </head>
+  <body>
+    <div class="container p5 bgc-lightgrey h300 w400">
+      <div class="w300 item1 h30 bgc-aqua">
+        Menu
+        <!-- <div id="button1" class="b1" onclick="changeContent()">home</div> -->
+        <div id="button1" class="b1">home</div>
+      </div>
+      <div class="w300 item2 h100 bgc-aqua">Content</div>
+      <div class="w300 item3 h30 bgc-aqua">Footer</div>
+    </div>
+  </body>
+</html>
+
