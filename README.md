@@ -1,1 +1,1 @@
-Dynamic Web application 
+Dynamic Web application project
